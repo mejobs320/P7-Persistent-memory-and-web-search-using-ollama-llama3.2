@@ -1,0 +1,108 @@
+web c:\users\dell\appdata\local\programs\python\python313\lib\site-packages
+C:\Users\dell\AppData\Local\Programs\Python\Python313\python.exe
+
+
+
+run ollama locally
+program - get restaurant review file xls loaded using vector, than create persistent memory using sqllite and store all prommts and response in that
+Logic- search restaurant review from loaded file, from sqllite check prompts, then search restaurant review from google and provide reponse on webui using streamlit
+
+Main py - used tavily web search
+Main.py - used duckduckgo_search web search
+
+
+Prompt:
+Create program RAG pipeline created to load restaurant review data using chroma db (code shared in vector.py)
+Create persistent memory to store prompts and responses
+logic is that we will ask for restaurant review queries which will be first looked into RAG pipeline where doc is provided
+Then looked into google search 
+Then provide response
+Webui is created using streamlit
+
+Demo code to load file is shared
+Running locally using ollama (model = OllamaLLM(model="llama3.2"))
+Install required libraries
+model mxbai-embed-large and llama3.2 is already loaded with ollama installed
+
+
+
+1)
+
+commands to create virtual env:
+virtual env commands: (environment name is env)
+python -m venv venv
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+.\venv\Scripts\Activate
+(env) PS C:\Users\dell\OneDrive\Desktop\Python projects\ollama>
+
+pip install -r requirements.txt
+streamlit run main.py
+streamlit run main.py
+
+
+
+question
+how many veg restaurant are there in india
+best restaurants and reviews
+
+
+
+
+
+
+
+
+
+
+
+
+
+details and commands:
+
+run ollama on packages donwload ollama and below 2 llm'
+ollama pull llama3.2  (LLM)
+ollama pull mxbai-embed-large (embeddings)
+project create restaurant review with using llm from ollama locally. no key required
+download and run.
+add vector database using chroma db in vector.py program
+it create chroma db
+
+It create venv environment and install requirement.txt
+given restaurant review csv data and llm answer using that
+
+
+
+
+
+
+run programs:
+python main.py
+query database:
+python query_db.py
+
+
+in command prompt:
+ollama pull llama3.2
+ollama pull mxbai-embed-large
+ollama list 
+
+
+
+pip install ollama
+
+Make sure Ollama is running:
+ollama serve
+
+kill ollama:
+askkill /F /IM ollama.exe
+
+
+
+
+
+
+
+
+
+
+
